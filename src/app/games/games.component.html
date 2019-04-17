@@ -1,0 +1,14 @@
+<div>
+  <ul class="games">
+    <li
+      *ngFor="let game of games"
+      [class.selected]="game === selectedGame"
+      (click)="onSelect(game)"
+      routerLink="/detail/{{ game.id }}"
+    >
+      <span class="id">{{ game.id }}</span>
+      <span class="name">{{ game.name }}</span>
+    </li>
+  </ul>
+  <app-game-detail [game]="selectedGame"></app-game-detail>
+</div>

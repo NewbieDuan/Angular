@@ -1,0 +1,32 @@
+.games {
+  // background: #000;
+  // text-align: center;
+  li {
+    width: 200px;
+    height: 32px;
+    margin-top: 4px;
+    outline: none;
+    span {
+      display: block;
+      text-align: center;
+      height: 100%;
+      line-height: 32px;
+    }
+    .id {
+      background: #5f7d8c;
+      width: 32px;
+
+      float: left;
+      border-radius: 6px 0 0 6px;
+    }
+    .name {
+      background: #eeeeee;
+      float: left;
+      width: 115px;
+      border-radius: 0 6px 6px 0;
+    }
+  }
+  li.selected .name {
+    background: #cfd8dc;
+  }
+}

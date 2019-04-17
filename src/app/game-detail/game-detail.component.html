@@ -1,0 +1,8 @@
+<div *ngIf="game">
+  <h3>{{ game.name }} Details</h3>
+  <div><span class="id">id:</span>{{ game.id }}</div>
+  <a routerLink="/describe/{{ game.id }}">游戏介绍</a>
+  <label>
+    <input [(ngModel)]="game.name" type="text" placeholder="name" />
+  </label>
+</div>
